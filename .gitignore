@@ -1,28 +1,33 @@
-# Firebase build and deployment files
-/firebase-debug.log
-/firebase-debug.*.log
+# Node.js dependencies
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Firebase configuration & credentials (DO NOT COMMIT API KEYS)
+firebase.json
 .firebaserc
+.env
+.env.local
+.env.development
+.env.production
 
-# Firebase Hosting
-/firebase.json
-*.cache
-hosting/.cache
+# React build files
+dist/
+build/
 
-# Firebase Functions
-/functions/node_modules/
-/functions/.env
-/functions/package-lock.json
+# Tailwind generated files
+postcss.config.js
+tailwind.config.js
 
-# Firebase Emulators
-/firebase-*.zip
-/.firebase/
-/emulator-ui/
-
-# Logs
-*.log
+# Logs & debugging files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.vscode/
+.DS_Store
 
-# Environment files (local configs)
-/.env.*
+# Misc
+*.log
+*.cache
+.idea/
